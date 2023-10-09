@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>LinkedIn</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-bar-left">
+      <a href="home.html" class="logo"><img src="./images/logo.png" alt=""></a>
+      <div class="nav-search-box">
+        <img src="./images/search.png">
+        <input type="text" placeholder="search here">
+      </div>
+    </div>
+    <div class="nav-bar-center">
+      <ul>
+        <li><a href="#" class="nav-active-link"><img src="./images/home.png" alt=""><span>Home</span></a></li>
+        <li><a href="#"><img src="./images/network.png" alt=""><span>My Network</span></a></li>
+        <li><a href="#"><img src="./images/jobs.png" alt=""><span>Jobs</span></a></li>
+        <li><a href="#"><img src="./images/message.png" alt=""><span>Message</span></a></li>
+        <li><a href="#"><img src="./images/notification.png" alt=""><span>Notification</span></a></li>
+      </ul>
+    </div>
+    <div class="nav-bar-right">
+      <div class="user-online"><img src="./images/user-1.png" class="user-nav-profile" onclick="toggleMenu()"></div>
+    </div>
+    <!-- profile drop down menu  -->
+    <div class="user-profile-menu" id="userProfileMenu">
+      <div class="profile-menu">
+        <div class="user-information">
+          <a href="profile.html"><img src="./images/user-1.png" alt=""></a>
+          <div>
+            <h3>Danial Bishaw</h3>
+            <a href="profile.html">Profile</a>
+          </div>
+        </div>
+        <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/feedback.png" alt="">
+          <p>Feed-Back</p>
+          <span>></span>
+        </a>
+          <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/setting.png" alt="">
+          <p>Setting</p>
+          <span>></span>
+        </a>
+           <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/help.png" alt="">
+          <p>Help-Support</p>
+          <span>></span>
+        </a>
+          <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/display.png" alt="">
+          <p>Accessibility</p>
+          <span>></span>
+        </a>
+        <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/logout.png" alt="">
+          <p>log-out</p>
+          <span>></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nav-Bar-End -->
+
+  <div class="container">
+    <!-- left side-bar  -->
+    <div class="left-side-bar">
+      <div class="left-side-bar-user-profile-box">
+        <img src="./images/cover-pic.png" width="100%">
+         <div class="left-side-user-profile-information">
+          <img src="./images/user-1.png" alt="">
+          <h1>Danial Bishaw</h1>
+          <h3>Web Developer in CAM</h3>
+          <ul>
+            <li>Your Profile Views<span>868</span></li>
+            <li>Your Post Views<span>66K</span></li>
+            <li>Your Connection<span>5K</span></li>
+          </ul>
+         </div>
+         <div class="left-side-bar-user-profile-link">
+          <a href="#"><img src="./images/items.png" alt="">My Items</a>
+          <a href="#"><img src="./images/premium.png" alt="">Try Premium</a>
+         </div>
+      </div>
+      <div class="left-side-bar-user-activity" id="sidebarActivity">
+        <h3>recent</h3>
+        <a href=""><img src="./images/recent.png" alt="">Android Development</a>
+        <a href=""><img src="./images/recent.png" alt="">software Design</a>
+        <a href=""><img src="./images/recent.png" alt="">wed Development</a>
+        <a href=""><img src="./images/recent.png" alt="">web Design</a>
+        <a href=""><img src="./images/recent.png" alt="">Ethical Hacker</a>
+        <h3>Groups</h3>
+        <a href=""><img src="./images/group.png" alt="">Agial Management</a>
+        <a href=""><img src="./images/group.png" alt="">Linux Command</a>
+        <a href=""><img src="./images/group.png" alt="">Software Pattern</a>
+        <a href=""><img src="./images/group.png" alt="">C programming</a>
+        <h3>Hashtag</h3>
+        <a href=""><img src="./images/hashtag.png" alt="">Try Hack Me</a>
+        <a href=""><img src="./images/hashtag.png" alt="">Php programming</a>
+        <a href=""><img src="./images/hashtag.png" alt="">Java Script</a>
+        <div class="left-discover-more-link">
+          <a href="">Discover</a>
+        </div>
+      </div>
+      <p id="showMoreLink" onclick="toggleActivity()">Show More <b>+</b></p>
+    </div>
+    <!-- center-content -->
+    <div class="center-content">
+      <div class="user-creat-post">
+        <div class="user-create-post-write">
+          <img src="./images/user-1.png" alt="">
+          <textarea rows="2" placeholder="write"></textarea>
+        </div>
+        <div class="user-create-post-link">
+          <li><img src="./images/photo.png">Photo</li>
+          <li><img src="./images/video.png">Video</li>
+          <li><img src="./images/event.png">Event</li>
+          <li>Post</li>
+        </div>
+      </div>
+      <div class="user-sort-by">
+        <hr>
+        <p>Sort by: <span>top <img src="./images/down-arrow.png" alt=""></span></p>
+      </div>
+      <div class="user-of-linkedin-post">
+        <div class="user-of-linkedin-post-author">
+          <img src="./images/user-3.png" alt="">
+          <div>
+            <h1>Lolawite Desta</h1>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, commodi.</small>
+            <small>5d ago</small>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Incidunt dolor ex similique dolorum possimus? Corporis.</p>
+          <img src="./images/post-image-1.png" width="100%">
+          <div class="user-post-status">
+            <div>
+              <img src="./images/thumbsup.png">
+              <img src="./images/love.png">
+              <img src="./images/clap.png">
+              <span class="user-liked-this-post">Bob Dan and 4568 others</span>
+            </div>
+            <div>
+              <span>2569 comments &middot; 110 share</span>
+            </div>
+          </div>
+          <div class="user-post-activity">
+            <div>
+              <img src="./images/user-1.png" class="user-post-activity-icon">
+              <img src="./images/down-arrow.png" class="user-post-activity-arrow-icon">
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/like.png" alt="">
+              <span>Like</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/comment.png" alt="">
+              <span>Comment</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/share.png" alt="">
+              <span>Share</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/send.png" alt="">
+              <span>Send</span>
+            </div>
+          </div>
+      </div>
+
+         <div class="user-of-linkedin-post">
+        <div class="user-of-linkedin-post-author">
+          <img src="./images/user-1.png" alt="">
+          <div>
+            <h1>Biniyam Dana</h1>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perferendis.</small>
+            <small>1m ago</small>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Incidunt dolor ex similique dolorum possimus? Corporis.</p>
+          <img src="./images/post-image-1.png" width="100%">
+          <div class="user-post-status">
+            <div>
+              <img src="./images/thumbsup.png">
+              <img src="./images/love.png">
+              <img src="./images/clap.png">
+              <span class="user-liked-this-post">Bob Dan and 4568 others</span>
+            </div>
+            <div>
+              <span>2569 comments &middot; 110 share</span>
+            </div>
+          </div>
+          <div class="user-post-activity">
+            <div>
+              <img src="./images/user-1.png" class="user-post-activity-icon">
+              <img src="./images/down-arrow.png" class="user-post-activity-arrow-icon">
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/like.png" alt="">
+              <span>Like</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/comment.png" alt="">
+              <span>Comment</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/share.png" alt="">
+              <span>Share</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/send.png" alt="">
+              <span>Send</span>
+            </div>
+          </div>
+      </div>
+
+         <div class="user-of-linkedin-post">
+        <div class="user-of-linkedin-post-author">
+          <img src="./images/user-2.png" alt="">
+          <div>
+            <h1>Hana Mulugata</h1>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.</small>
+            <small>3d ago</small>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Incidunt dolor ex similique dolorum possimus? Corporis.</p>
+          <img src="./images/post-image-2.png" width="100%">
+          <div class="user-post-status">
+            <div>
+              <img src="./images/thumbsup.png">
+              <img src="./images/love.png">
+              <img src="./images/clap.png">
+              <span class="user-liked-this-post">Bob Dan and 4568 others</span>
+            </div>
+            <div>
+              <span>2569 comments &middot; 110 share</span>
+            </div>
+          </div>
+          <div class="user-post-activity">
+            <div>
+              <img src="./images/user-1.png" class="user-post-activity-icon">
+              <img src="./images/down-arrow.png" class="user-post-activity-arrow-icon">
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/like.png" alt="">
+              <span>Like</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/comment.png" alt="">
+              <span>Comment</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/share.png" alt="">
+              <span>Share</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/send.png" alt="">
+              <span>Send</span>
+            </div>
+          </div>
+      </div>
+
+         <div class="user-of-linkedin-post">
+        <div class="user-of-linkedin-post-author">
+          <img src="./images/user-3.png" alt="">
+          <div>
+            <h1>Sara Huna</h1>
+            <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, accusamus.</small>
+            <small>1d ago</small>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Incidunt dolor ex similique dolorum possimus? Corporis.</p>
+          <img src="./images/post-image-3.png" width="100%">
+          <div class="user-post-status">
+            <div>
+              <img src="./images/thumbsup.png">
+              <img src="./images/love.png">
+              <img src="./images/clap.png">
+              <span class="user-liked-this-post">Bob Dan and 4568 others</span>
+            </div>
+            <div>
+              <span>2569 comments &middot; 110 share</span>
+            </div>
+          </div>
+          <div class="user-post-activity">
+            <div>
+              <img src="./images/user-1.png" class="user-post-activity-icon">
+              <img src="./images/down-arrow.png" class="user-post-activity-arrow-icon">
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/like.png" alt="">
+              <span>Like</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/comment.png" alt="">
+              <span>Comment</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/share.png" alt="">
+              <span>Share</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/send.png" alt="">
+              <span>Send</span>
+            </div>
+          </div>
+      </div>
+
+         <div class="user-of-linkedin-post">
+        <div class="user-of-linkedin-post-author">
+          <img src="./images/user-4.png" alt="">
+          <div>
+            <h1>Selam Frezer</h1>
+            <small>I Work Every Day</small>
+            <small>1w ago</small>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Incidunt dolor ex similique dolorum possimus? Corporis.</p>
+          <img src="./images/post-image-4.png" width="100%">
+          <div class="user-post-status">
+            <div>
+              <img src="./images/thumbsup.png">
+              <img src="./images/love.png">
+              <img src="./images/clap.png">
+              <span class="user-liked-this-post">Bob Dan and 4568 others</span>
+            </div>
+            <div>
+              <span>2569 comments &middot; 110 share</span>
+            </div>
+          </div>
+          <div class="user-post-activity">
+            <div>
+              <img src="./images/user-1.png" class="user-post-activity-icon">
+              <img src="./images/down-arrow.png" class="user-post-activity-arrow-icon">
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/like.png" alt="">
+              <span>Like</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/comment.png" alt="">
+              <span>Comment</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/share.png" alt="">
+              <span>Share</span>
+            </div>
+            <div class="user-post-activity-link">
+              <img src="./images/send.png" alt="">
+              <span>Send</span>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    <!-- right side-bar -->
+    <div class="right-side-bar">
+      <div class="right-side-bar-news">
+        <img src="./images/more.png" class="right-information-icon">
+        <h3>Trending</h3>
+        <a href="#">Mostly Wanted Skilled Manpower</a>
+        <span>2d ago &middot; 21,678 readers</span>
+
+        <a href="#">now times fullstack developer growing horizontally</a>
+        <span>5d ago &middot; 5,778 readers</span>
+
+        <a href="#">Are you Fortnend Developer we have news for you</a>
+        <span>2w ago &middot; 11,778 readers</span>
+
+        <a href="#">ALX FullStack Software Engineering</a>
+        <span>2m ago &middot; 31,378 readers</span>
+        <a href="#" class="right-side-bar-read-more-links">Read More</a>
+      </div>
+      <div class="right-side-bar-ads">
+        <small>Ads &middot; &middot; &middot; </small>
+        <p>Advanced JavaScript Class</p>
+        <div>
+          <img src="./images/user-1.png">
+          <img src="./images/mi-logo.png" alt="">
+        </div>
+        <b>Demand in CAM</b>
+        <a href="#" class="right-side-bar-ads-links">More</a>
+      </div>
+      <div class="right-side-bar-useful-link">
+        <a href="#">Accessibility</a>
+        <a href="#">Advertising</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Help Center</a>
+        <a href="#">About</a>
+        <div class="copy-right">
+          <img src="./images/logo.png">
+          <p>LinkdIn &#169; 2023. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>LinkedIn</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-bar-left">
+      <a href="home.html" class="logo"><img src="./images/logo.png" alt=""></a>
+      <div class="nav-search-box">
+        <img src="./images/search.png">
+        <input type="text" placeholder="search here">
+      </div>
+    </div>
+    <div class="nav-bar-center">
+      <ul>
+        <li><a href="#" class="nav-active-link"><img src="./images/home.png" alt=""><span>Home</span></a></li>
+        <li><a href="#"><img src="./images/network.png" alt=""><span>My Network</span></a></li>
+        <li><a href="#"><img src="./images/jobs.png" alt=""><span>Jobs</span></a></li>
+        <li><a href="#"><img src="./images/message.png" alt=""><span>Message</span></a></li>
+        <li><a href="#"><img src="./images/notification.png" alt=""><span>Notification</span></a></li>
+      </ul>
+    </div>
+    <div class="nav-bar-right">
+      <div class="user-online"><img src="./images/user-1.png" class="user-nav-profile" onclick="toggleMenu()"></div>
+    </div>
+    <!-- profile drop down menu  -->
+    <div class="user-profile-menu" id="userProfileMenu">
+      <div class="profile-menu">
+        <div class="user-information">
+        <img src="./images/user-1.png" alt="">
+          <div>
+            <h3>Danial Bishaw</h3>
+            <!-- <a href="">Profile</a> -->
+          </div>
+        </div>
+        <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/feedback.png" alt="">
+          <p>Feed-Back</p>
+          <span>></span>
+        </a>
+          <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/setting.png" alt="">
+          <p>Setting</p>
+          <span>></span>
+        </a>
+           <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/help.png" alt="">
+          <p>Help-Support</p>
+          <span>></span>
+        </a>
+          <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/display.png" alt="">
+          <p>Accessibility</p>
+          <span>></span>
+        </a>
+        <hr>
+        <a href="#" class="user-profile-menu-link">
+          <img src="./images/logout.png" alt="">
+          <p>log-out</p>
+          <span>></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nav-Bar-End -->
+  <!-- profile center  -->
+  <div class="container">
+    <div class="user-profile-center">
+      <div class="user-profile-container">
+        <img src="./images/cover-pic.png" width="100%">
+        <div class="user-profile-inner">
+          <img src="./images/user-1.png" class="user-profile-image">
+          <h1>Danial Bishaw</h1>
+          <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam eos atque tempora debitis? Eius.</b>
+          <p>AddisAbaba, Ethiopia &middot; <a href="#">Contact Information</a></p>
+          <div class="user-mutual-connection">
+            <img src="./images/user-2.png" alt="">
+            <span>1 mutual connection: Micky Akalu</span>
+          </div>
+          <div class="user-profile-button">
+            <a href="#" class="user-profile-primary-button"><img src="./images/connect.png">Connect</a>
+            <a href="#"><img src="./images/chat.png">Message</a>
+          </div>
+        </div>
+      </div>
+          <div class="user-profile-description">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deserunt autem enim facere mollitia nisi odit dolorem suscipit ipsam, nam voluptas accusantium praesentium recusandae dignissimos facilis quae maxime accusamus architecto. lorem10</p>
+      <a href="" class="user-profile-more-button">More</a>
+    </div>
+    <div class="user-profile-description">
+      <h2>Experience</h2>
+      <div class="user-profile-description-row">
+        <img src="./images/microsoft.png" alt="">
+        <div>
+          <h3>Back-End Developer</h3>
+          <b>CAM &middot; Full-Time</b>
+          <b>jun 2023 - Present &middot; 5 month</b>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laudantium illum nam ex odio soluta officiis. lorem10</p>
+            <hr>
+        </div>
+      </div>
+
+         <div class="user-profile-description-row">
+        <img src="./images/slack.png" alt="">
+        <div>
+          <h3>web Developer</h3>
+          <b>Slack &middot; Full-Time</b>
+          <b>jun 2020 - 2021 &middot; 1 years</b>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laudantium illum nam ex odio soluta officiis. lorem10</p>
+            <hr>
+        </div>
+      </div>
+
+         <div class="user-profile-description-row">
+        <img src="./images/google.png" alt="">
+        <div>
+          <h3>Front-End Developer</h3>
+          <b>Google &middot; Full-Time</b>
+          <b>jun 2019 - 2020 &middot; 1 years</b>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laudantium illum nam ex odio soluta officiis. lorem10</p>
+        </div>
+      </div>
+      <hr>
+      <a href="#" class="user-profile-experience-link">Show all 5 Experiences <img src="./images/right-arrow.png" alt=""></a>
+    </div>
+    <div class="user-profile-description">
+      <h2>Education</h2>
+      <div class="user-profile-description-row">
+        <img src="./images/stanford.png" alt="">
+        <div>
+          <h3>Stanford University</h3>
+          <b>Software Engineering</b>
+          <b>2016 - 2020</b>
+          <hr>
+        </div>
+      </div>
+
+        <div class="user-profile-description-row">
+        <img src="./images/north.png" alt="">
+        <div>
+          <h3>Northwestern University</h3>
+          <b>Computer Science</b>
+          <b>2020 - 2023</b>
+          <hr>
+        </div>
+      </div>
+
+       <div class="user-profile-description-row">
+        <img src="./images/mit.png" alt="">
+        <div>
+          <h3>Harvard University</h3>
+          <b>Senior High School</b>
+          <b>2002 - 2016</b>
+        </div>
+      </div>
+    </div>
+    <div class="user-profile-description">
+      <h2>Skills</h2>
+      <a href="" class="user-profile-skills-button">PHP</a>
+      <a href="" class="user-profile-skills-button">XML</a>
+      <a href="" class="user-profile-skills-button">Python</a>
+      <a href="" class="user-profile-skills-button">C++</a>
+      <a href="" class="user-profile-skills-button">JavaScript</a>
+      <a href="" class="user-profile-skills-button">Laravel</a>
+      <a href="" class="user-profile-skills-button">Css</a>
+      <a href="" class="user-profile-skills-button">Java</a>
+      <a href="" class="user-profile-skills-button">HTML</a>
+    </div>
+
+      <div class="user-profile-description">
+      <h2>Language</h2>
+      <a href="" class="user-profile-language-button">English</a>
+      <a href="" class="user-profile-language-button">French</a>
+      <a href="" class="user-profile-language-button">Amharic</a>
+      <a href="" class="user-profile-language-button">Chinse</a>
+    </div>
+    </div>
+    <!-- profile side-bar  -->
+     <div class="user-profile-side-bar">
+      <div class="right-side-bar-ads">
+        <small>Ads &middot; &middot; &middot; </small>
+        <p>Advanced JavaScript Class</p>
+        <div>
+          <img src="./images/user-1.png">
+          <img src="./images/mi-logo.png" alt="">
+        </div>
+        <b>Demand in CAM</b>
+        <a href="#" class="right-side-bar-ads-links">More</a>
+      </div>
+      <div class="user-profile-side-bar-people">
+        <h3>People you may know</h3>
+        <div class="user-profile-side-bar-row">
+          <img src="./images/user-3.png" alt="">
+          <div>
+            <h2>Biniyam Dana</h2>
+            <p>Front-End Developer at CAM</p>
+            <a href="">Connect</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="user-profile-side-bar-people">
+        <h3>People you may know</h3>
+        <div class="user-profile-side-bar-row">
+          <img src="./images/user-4.png" alt="">
+          <div>
+            <h2>Lolawite Desta</h2>
+            <p>Web Developer at CAM</p>
+            <a href="">Connect</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="user-profile-side-bar-people">
+        <h3>People you may know</h3>
+        <div class="user-profile-side-bar-row">
+          <img src="./images/user-5.png" alt="">
+          <div>
+            <h2>Tariku Huna</h2>
+            <p>Web Design at CAM</p>
+            <a href="">Connect</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="user-profile-footer">
+         <div class="right-side-bar-useful-link">
+        <a href="#">Accessibility</a>
+        <a href="#">Advertising</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Help Center</a>
+        <a href="#">About</a>
+        <div class="copy-right">
+          <img src="./images/logo.png">
+          <p>LinkdIn &#169; 2023. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
